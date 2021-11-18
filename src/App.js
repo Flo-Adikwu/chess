@@ -79,6 +79,7 @@ const App = () => {
       pieceTheme: 'assets/images/{piece}.png',
       position: 'start',
       draggable: true,
+      showError: 'alert',
       onDragStart: onDragStart,
       onDrop: onDrop,
       onSnapEnd: onSnapEnd,
