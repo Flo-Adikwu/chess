@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+body{
+    background-color: #31050a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.boardContainer{
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myBoard{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.board{
+    width: 400px;
+    display: flex;
+    justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.fen{
+    background-color: #D97D2E;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 380px;
+    text-align: center;
+    word-break: break-all;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stat{
+    background-color: #779756;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 380px;
+    text-align: center;
+}
+.pgn{
+    background-color: #175E8D;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 380px;
+    text-align: center;
+    word-break: break-all;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.valid{
+    background-color: lightgreen;
+    position: relative;
+    
+}
+.valid::before{
+    content: "";
+    position: absolute;
+    border: 1px solid green;
+    width: 100%;
+    height: 100%;
 }
