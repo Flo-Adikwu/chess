@@ -8,7 +8,7 @@ This is the codebase for the chess-game Domain Challenge
 ## Getting Started
 ---
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Local Setup
 ---
@@ -63,6 +63,12 @@ https://clever-einstein-c9530d.netlify.app/
 
 ## Running Unit Tests
 ---
+To ensure proper functionality, I would be testing for the following:
+
+- white chess piece is to start,
+- on drag chess piece, box color of possible moves highlights,
+- on drop, box color is not highlighted,
+- status, fen and pgn states change as chess piece moves
 
 To run unit tests only use the command below
 
@@ -81,5 +87,6 @@ npm run coverage:local
 
 
 ```
+Cheers!
 
 
