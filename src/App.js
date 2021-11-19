@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import * as Chess from "chess.js";
+import Chess from "chess.js";
+import ChessBoard from 'chessboardjs';
 import './App.css';
 
 
@@ -11,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     let game = new Chess()// eslint-disable-line no-undef
-    const onDragStart = (source, piece, position, orientation) => {
+    const onDragStart = (piece) => {
       // do not pick up pieces if the game is over
       if (game.game_over()) return false
 
@@ -75,7 +76,7 @@ const App = () => {
 
     //let's configure our board
     // eslint-disable-next-line no-undef
-    let board1 = Chessboard('board1', {
+    let board1 = ChessBoard('board1', {
       pieceTheme: 'assets/images/{piece}.png',
       position: 'start',
       draggable: true,
@@ -84,14 +85,14 @@ const App = () => {
       onDrop: onDrop,
       onSnapEnd: onSnapEnd,
       //after we move a piece, reset highlighted squares
-      onMouseoutSquare: (square) => {
+      onMouseoutSquare: () => {
         let selectedSquares = document.querySelectorAll(".valid");
         for (const selectedSquare of selectedSquares) {
           selectedSquare.classList.remove('valid')
         }
       },
       //when we hover on a piece, highlight available square moves
-      onMouseoverSquare: (square, piece) => {
+      onMouseoverSquare: (square) => {
         const moves = game.moves({
           square: square,
           verbose: true

@@ -1,5 +1,7 @@
 body{
     background-color: #31050a;
+    font-family:'Courier New', Courier, monospace;
+
 }
 
 .boardContainer{
@@ -24,6 +26,7 @@ body{
     width: 380px;
     text-align: center;
     word-break: break-all;
+    font-weight: bold;
 }
 .stat{
     background-color: #779756;
@@ -32,6 +35,7 @@ body{
     padding: 10px;
     width: 380px;
     text-align: center;
+    font-weight: bold;
 }
 .pgn{
     background-color: #175E8D;
@@ -41,6 +45,7 @@ body{
     width: 380px;
     text-align: center;
     word-break: break-all;
+    font-weight: bold;
 }
 h1{
     text-align: center;

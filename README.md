@@ -27,7 +27,7 @@ npm start
 ## Branches
 ---
 
-- master - Main Branch
+- master 
 
 ## Contributing
 
@@ -43,7 +43,7 @@ npm start
 
 - [React](https://reactjs.org/) - The front-end library used.
 - [create-react-app](https://github.com/facebook/create-react-app) - The command line utility tool for setting up React project.
-- [chessboard.js]https://chessboardjs.com/
+- [chessboardjs]https://chessboardjs.com/
 - [chess.js]https://www.npmjs.com/package/chess
 
 ## Developer
@@ -55,8 +55,6 @@ https://clever-einstein-c9530d.netlify.app/
 
 
 ## Unit Tests
----
-
 - Testing library
   [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
